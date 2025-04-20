@@ -49,4 +49,4 @@ mkimage -A arm -O linux -T kernel -C none -a 0x2080000 -e 2080000 -n "Linux kern
 cp $BIN_DIR/zynq-pluto-sdr-revc.dtb $SDIMGDIR/devicetree.dtb
 cp $BOARD_DIR/uboot-env.txt $SDIMGDIR/
 
-cd $BIN_DIR && zip tezuka.zip boot.dfu boot.frm pluto.frm pluto.dfu sdimg/*
+cd $BIN_DIR && zip tezuka.zip boot.dfu boot.frm pluto.frm pluto.dfu uboot-env.dfu sdimg/*
